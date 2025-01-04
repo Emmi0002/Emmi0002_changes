@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "made_dillan";
+  src: url(/fonts/made_dillan.woff-kopi);
+}
+
+@font-face {
+  font-family: "radley_italic";
+  src: url(/fonts/radley_italic.woff);
+}
+
+@font-face {
+  font-family: "aleo_regular";
+  src: url(/fonts/aleo/Aleo-Regular.otf);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  --BG_color: #fcf9f6;
+  --primary_color: #ae0000;
+  --H1_font: "made_dillan";
+  --H2_font: "made_dillan";
+  --p_font: "aleo_regular";
+}
+
+h1 {
+  font-family: var(--H1_font);
+  text-align: center;
+  font-size: 34px;
+}
+
+h2 {
+  font-family: var(--H2_font);
+  color: var(--primary_color);
+}
+
+p {
+  font-family: var(--p_font);
+}
+
+body {
+  background-color: var(--BG_color);
+}
+
+/**************** Burger Menu ******************/
+
+ul img {
+  display: none;
+}
+
+.logo {
+  width: 60px;
+  height: 50px;
+  position: fixed;
+}
+
+.burger-menu {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--primary_color);
+  position: fixed;
+  right: 0;
+  padding-right: 20px;
+  top: 10px;
+  z-index: 888;
+}
+
+#burger-toggle {
+  display: none;
+}
+
+nav {
+  height: 50px;
+  padding: 10px;
+}
+
+nav ul {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 35px;
+  padding-right: 25px;
+  list-style-type: none;
+  text-align: right;
+  background-color: var(--primary_color);
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#burger-toggle:checked + label + nav ul {
+  display: block;
+}
+
+#burger-toggle:checked + label {
+  color: black;
+}
+
+nav a {
+  padding: 3px;
+  line-height: 1.5rem;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  color: var(--BG_color);
+  text-decoration: none;
+  font-family: var(--H1_font);
+}
+
+.menu {
+  z-index: 999;
+}
+
+/**************** Footer *************/
+
+footer{
+  border-top: #ae0000 2px solid;
+  margin-top: 50px;
+}
+
+footer h3 {
+  font-family: var(--H1_font);
+  color: var(--primary_color);
+}
+
+footer p{
+  font-family: var(--H1_font);
+  color: var(--primary_color);
+}
