@@ -72,6 +72,10 @@ video {
   margin-bottom: 100px;
 }
 
+.highlight{
+    color: var(--primary_color);
+}
+
 /******************* Portfolio *****************/
 
 section {

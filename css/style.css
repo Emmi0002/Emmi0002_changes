@@ -26,9 +26,11 @@ html {
 
 h1 {
   font-family: var(--H1_font);
+  color: black;
   text-align: center;
   font-size: 34px;
   margin-top: 50px;
+  text-decoration: none;
 }
 
 h2 {
@@ -36,12 +38,25 @@ h2 {
   color: var(--primary_color);
 }
 
-h3{
+h3 {
   font-family: var(--H1_font);
   color: var(--BG_color);
 }
 
-h4 {
+h4{
+  font-family: var(--H1_font);
+  font-size: larger;
+}
+
+h5{
+  font-family: var(--H1_font);
+  position: absolute;
+  rotate: -90deg;
+  left: -40px;
+  margin-top: 20%;
+}
+
+h6 {
   font-family: var(--H1_font);
   color: var(--primary_color);
   font-size: larger;
@@ -55,7 +70,7 @@ body {
   background-color: var(--BG_color);
 }
 
-#HeroSection{
+#HeroSection {
   display: none;
 }
 
@@ -128,6 +143,34 @@ nav a {
   z-index: 999;
 }
 
+/****************** Temaer **************/
+
+.main_margin{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.main_margin h1{
+  margin-bottom: 10px;
+}
+
+.tema_link{
+  text-decoration: none;
+  background-color: var(--primary_color);
+  color: var(--BG_color);
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.flex_container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+
+
 /**************** Footer *************/
 
 footer {
@@ -159,7 +202,8 @@ footer p {
   margin-left: var(--footer_marginLeft);
 }
 
-footer h4 {
+footer h6 {
   margin-bottom: 0;
   margin-left: var(--footer_marginLeft);
+  margin-top: 15px;
 }
