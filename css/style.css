@@ -21,17 +21,30 @@ html {
   --H1_font: "made_dillan";
   --H2_font: "made_dillan";
   --p_font: "aleo_regular";
+  --footer_marginLeft: 15px;
 }
 
 h1 {
   font-family: var(--H1_font);
   text-align: center;
   font-size: 34px;
+  margin-top: 50px;
 }
 
 h2 {
   font-family: var(--H2_font);
   color: var(--primary_color);
+}
+
+h3{
+  font-family: var(--H1_font);
+  color: var(--BG_color);
+}
+
+h4 {
+  font-family: var(--H1_font);
+  color: var(--primary_color);
+  font-size: larger;
 }
 
 p {
@@ -40,6 +53,10 @@ p {
 
 body {
   background-color: var(--BG_color);
+}
+
+#HeroSection{
+  display: none;
 }
 
 /**************** Burger Menu ******************/
@@ -113,17 +130,36 @@ nav a {
 
 /**************** Footer *************/
 
-footer{
+footer {
   border-top: #ae0000 2px solid;
   margin-top: 50px;
 }
 
-footer h3 {
+footer p {
   font-family: var(--H1_font);
   color: var(--primary_color);
 }
 
-footer p{
-  font-family: var(--H1_font);
-  color: var(--primary_color);
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-right: 83%;
+}
+
+.grid_1-1-1 img {
+  width: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: var(--footer_marginLeft);
+}
+
+footer p {
+  margin: 5px;
+  margin-left: var(--footer_marginLeft);
+}
+
+footer h4 {
+  margin-bottom: 0;
+  margin-left: var(--footer_marginLeft);
 }
