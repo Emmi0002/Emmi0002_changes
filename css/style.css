@@ -43,12 +43,12 @@ h3 {
   color: var(--BG_color);
 }
 
-h4{
+h4 {
   font-family: var(--H1_font);
   font-size: larger;
 }
 
-h5{
+h5 {
   font-family: var(--H1_font);
   position: absolute;
   rotate: -90deg;
@@ -90,11 +90,11 @@ ul img {
   font-size: 2rem;
   cursor: pointer;
   color: var(--primary_color);
-  position: fixed;
   right: 0;
   padding-right: 20px;
   top: 10px;
   z-index: 888;
+  position: fixed;
 }
 
 #burger-toggle {
@@ -145,16 +145,16 @@ nav a {
 
 /****************** Temaer **************/
 
-.main_margin{
+.main_margin {
   margin-left: 40px;
   margin-right: 40px;
 }
 
-.main_margin h1{
+.main_margin h1 {
   margin-bottom: 10px;
 }
 
-.tema_link{
+.tema_link {
   text-decoration: none;
   background-color: var(--primary_color);
   color: var(--BG_color);
@@ -163,13 +163,27 @@ nav a {
   border-radius: 8px;
 }
 
-.flex_container{
+.flex_container {
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
 }
 
+.flex_container2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
+.tilbage_margin {
+  margin-top: 30px;
+}
+
+.tilbage-link {
+  text-decoration: none;
+  color: gray;
+  border-bottom: gray 1px solid;
+}
 
 /**************** Footer *************/
 
@@ -206,4 +220,25 @@ footer h6 {
   margin-bottom: 0;
   margin-left: var(--footer_marginLeft);
   margin-top: 15px;
+}
+
+@media (width > 1300px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 90px;
+  }
+
+  .burger-menu {
+    font-size: 3.5rem;
+  }
+
+  nav ul {
+    top: 55px;
+  }
+
+  
 }
