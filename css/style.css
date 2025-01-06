@@ -242,9 +242,11 @@ footer h6 {
 
   /*************** Temaer *******************/
 
+  .tilbage-link {
+    font-size: 20px;
+  }
 
-
-  .tilbage_margin{
+  .tilbage_margin {
     margin-top: 100px;
   }
 
@@ -253,7 +255,7 @@ footer h6 {
     margin-left: 100px;
   }
 
-  .tema_grid{
+  .tema_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -262,13 +264,13 @@ footer h6 {
     margin-right: 100px;
   }
 
-  .tema_grid img{
+  .tema_grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .grid_container{
+  .grid_container {
     grid-column: 1/2;
     grid-row: 2/3;
   }
@@ -290,13 +292,12 @@ footer h6 {
   h6 {
     font-size: x-large;
   }
-  
-  footer p{
+
+  footer p {
     font-size: smaller;
   }
 
   .grid_1-1-1 {
     margin-right: 95%;
   }
-  
 }
