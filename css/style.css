@@ -4,13 +4,8 @@
 }
 
 @font-face {
-  font-family: "radley_italic";
-  src: url(/fonts/radley_italic.woff);
-}
-
-@font-face {
   font-family: "aleo_regular";
-  src: url(/fonts/aleo/Aleo-Regular.otf);
+  src: url(/fonts/Aleo-Regular.woff);
 }
 
 html {
