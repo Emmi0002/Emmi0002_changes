@@ -1,11 +1,11 @@
 @font-face {
   font-family: "made_dillan";
-  src: url(/fonts/made_dillan.woff) format("woff");
+  src: url(../fonts/made_dillan.woff) format("woff");
 }
 
 @font-face {
   font-family: "aleo_regular";
-  src: url(/fonts/Aleo-Regular.woff) format("woff");
+  src: url(../fonts/Aleo-Regular.woff) format("woff");
 }
 
 html {
