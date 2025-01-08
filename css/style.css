@@ -46,7 +46,7 @@ h4 {
 h5 {
   font-family: var(--H1_font);
   position: absolute;
-  rotate: -90deg;
+  transform: rotate(-90deg);
   left: -40px;
   margin-top: 20%;
 }
