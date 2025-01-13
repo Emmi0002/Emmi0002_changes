@@ -134,8 +134,27 @@ nav a {
   font-family: var(--H1_font);
 }
 
+#indexLink:hover {
+  text-decoration: underline;
+  z-index: 10;
+}
+
+#portfolioLink:hover {
+  text-decoration: underline;
+  z-index: 10;
+}
+
+#kompetencerLink:hover {
+  text-decoration: underline;
+  z-index: 10;
+}
+
+.underline_menu {
+  text-decoration: underline;
+}
+
 .menu {
-  z-index: 999;
+  z-index: 9;
 }
 
 /****************** Temaer **************/
