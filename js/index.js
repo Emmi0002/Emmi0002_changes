@@ -3,6 +3,7 @@
 const video = document.querySelector("video_HeroSection");
 
 video.addEventListener("mouseover", () => {
+  console.log("unmute")
   video.muted = false;
 });
 
