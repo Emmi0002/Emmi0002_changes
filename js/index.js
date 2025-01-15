@@ -1,47 +1,48 @@
-// Musik til videoen
+window.addEventListener("load", start);
+
+const BGSound = document.querySelector("#snd1");
+const Sound = document.querySelector("#sound");
+const MuteSound = document.querySelector("#sound_mute");
+
+function start() {
+  // sound on and off
+
+  Sound.classList.add("hide");
+  Sound.addEventListener("click", stopSound);
+  MuteSound.addEventListener("click", startSound);
+}
+
+function stopSound() {
+  console.log("stopSound");
+  Sound.classList.add("hide");
+  MuteSound.classList.remove("hide");
+  BGSound.pause();
+}
+
+function startSound() {
+  console.log("startSound");
+  Sound.classList.remove("hide");
+  MuteSound.classList.add("hide");
+  BGSound.currentTime = 0;
+  BGSound.play();
+  BGSound.addEventListener("ended", loopSound_start);
+}
+
+function loopSound_start() {
+  console.log("loopSound");
+  BGSound.play();
+}
+// ******************************************
+// Tidligere kode til at få musik til videoen
+// ******************************************
 
 const video = document.querySelector("video_HeroSection");
 
 video.addEventListener("mouseover", () => {
-  console.log("unmute")
+  console.log("unmute");
   video.muted = false;
 });
 
 video.addEventListener("mouseout", () => {
   video.muted = true;
 });
-
-// Ovenstående arrow funktion forkortelse af følgende:
-
-// video.addEventListener("mouseover", unmuteVideo);
-
-// function unmuteVideo() {
-//   video.muted = false;
-// }
-
-// video.addEventListener("mouseout", muteVideo);
-
-// function muteVideo() {
-//   video.muted = true;
-// }
-
-// Funktion til underline af menupunkter
-
-document.querySelector("#indexLink").addEventListener("mouseover", underline1);
-document.querySelector("#portfolioLink").addEventListener("mouseover", underline2);
-document.querySelector("#kompetencerLink").addEventListener("mouseover", underline3);
-
-function underline1() {
-  console.log("underline1");
-  document.querySelector("#indexLink").classList.add("underline_menu");
-}
-
-function underline2() {
-  console.log("underline2");
-  document.querySelector("#portfolioLink").classList.add("underline_menu");
-}
-
-function underline3() {
-  console.log("underline3");
-  document.querySelector("#kompetencerLink").classList.add("underline_menu");
-}

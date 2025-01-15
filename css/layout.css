@@ -92,6 +92,32 @@ video {
   color: var(--primary_color);
 }
 
+#sound {
+  width: 7%;
+  aspect-ratio: 110/78;
+  transform: scale(0.5);
+  position: absolute;
+  top: 91%;
+  left: 92%;
+  background-size: cover;
+  z-index: 99;
+}
+
+#sound_mute {
+  width: 7%;
+  aspect-ratio: 91/75;
+  transform: scale(0.5);
+  position: absolute;
+  top: 91%;
+  left: 92%;
+  background-size: cover;
+  z-index: 99;
+}
+
+.hide{
+  display: none;
+}
+
 /******************* Portfolio *****************/
 
 section {
@@ -342,7 +368,7 @@ div[class^="fill"] {
     width: 100%;
   }
 
-  .grid_kompetencer h2{
+  .grid_kompetencer h2 {
     margin-right: 200px;
     font-size: 20px;
   }
